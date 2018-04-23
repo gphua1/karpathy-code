@@ -61,7 +61,7 @@ val_loss = train(net, encoded, epochs=args.num_epochs, n_seqs=args.batch_size,
                                n_steps=args.seq_length, lr=args.learning_rate,
                                cuda=args.gpu, print_every=args.print_every)
 
-save_file = 'trained.ckpt'
+save_file = 'checkpoint1.ckpt'
 
 save_model(net, os.path.join(args.save_dir, save_file))
-print('Network saved as {save_file}')
+print('Network saved as {checkpoint1.ckpt}')
